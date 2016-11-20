@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class Main {
+//	pushing changes to git hib
   static String url = "jdbc:oracle:thin:@localhost:1521:orcl";
   static String username = "poc";
   static String password = "welcome1";
