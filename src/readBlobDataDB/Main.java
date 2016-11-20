@@ -16,7 +16,8 @@ public class Main {
   public static void main(String[] args) throws Exception {
     Class.forName("oracle.jdbc.driver.OracleDriver");
     Connection conn = DriverManager.getConnection(url, username, password);
-   
+    System.out.println("updateing master");
+
     String sql = "SELECT id, text FROM sys.blob_test ";
     PreparedStatement stmt = conn.prepareStatement(sql);
     ResultSet resultSet = stmt.executeQuery();
