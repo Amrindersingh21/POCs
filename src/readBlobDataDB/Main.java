@@ -16,8 +16,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     Class.forName("oracle.jdbc.driver.OracleDriver");
     Connection conn = DriverManager.getConnection(url, username, password);
-    System.out.println("changing master branch");
-
+   
     String sql = "SELECT id, text FROM sys.blob_test ";
     PreparedStatement stmt = conn.prepareStatement(sql);
     ResultSet resultSet = stmt.executeQuery();
@@ -26,7 +25,8 @@ public class Main {
       String text = resultSet.getString(2);
       System.out.println(id);
       System.out.println(text);
-
+      System.out.println("git hub read 2 testing");
+      
 //      byte[] buffer = new byte[1];
 //      InputStream is = resultSet.getBinaryStream(3);
 //      while (is.read(buffer) > 0) {
