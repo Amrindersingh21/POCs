@@ -30,7 +30,8 @@ public class Main {
 //      InputStream is = resultSet.getBinaryStream(3);
 //      while (is.read(buffer) > 0) {
 //        fos.write(buffer);
-      }
+      System.out.println("git hub read 3"); 
+    }
     conn.close();
 //      fos.close();
     }
