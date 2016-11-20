@@ -25,7 +25,8 @@ public class Main {
       String text = resultSet.getString(2);
       System.out.println(id);
       System.out.println(text);
-
+      System.out.println("git hub read 2 testing");
+      
 //      byte[] buffer = new byte[1];
 //      InputStream is = resultSet.getBinaryStream(3);
 //      while (is.read(buffer) > 0) {
